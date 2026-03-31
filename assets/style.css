@@ -45,6 +45,7 @@
   /* Geometry */
   --r:      8px;
   --trans:  0.22s ease;
+  --nav-h:  80px;
 
   /* Spacing */
   --pad-x:  clamp(20px, 5vw, 52px);
