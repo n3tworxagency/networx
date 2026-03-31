@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N3TWORX — Client Testimonials | Success Stories</title>
+  <meta name="description" content="Real testimonials from CFD brokers and prop firms who built acquisition systems and scaled revenue with N3TWORX." />
+  <meta property="og:title" content="N3TWORX — Client Testimonials | Success Stories" />
+  <meta property="og:description" content="Real testimonials from CFD brokers and prop firms who built acquisition systems and scaled revenue with N3TWORX." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/Logo300x300-QyGni.png" />
+  <meta property="og:url" content="https://n3tworx.com/testimonials" />
+  <link rel="canonical" href="https://n3tworx.com/testimonials" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23141C25'/><text x='50%25' y='72%25' text-anchor='middle' font-family='Arial Black' font-weight='900' font-size='12' fill='%2350C589'>N3</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+/* ============================================================
+   N3TWORX — Design System CSS
+   Matches n3tworx.html exactly: Manrope, emerald/copper palette,
+   dark backgrounds, all shared components.
+   ============================================================ */
+
+/* --- RESET & BASE ------------------------------------------ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{line-height:1.15;-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+body{margin:0;font-family:'Manrope',sans-serif;font-size:16px;line-height:1.65;
+  color:#fff;background:#020306;-webkit-font-smoothing:antialiased;}
+img{border-style:none;max-width:100%;display:block;}
+a{background-color:transparent;text-decoration:none;color:inherit;}
+button{cursor:pointer;background:none;border:none;font-family:inherit;}
+ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{line-height:1.2;font-weight:700;}
+
+/* --- CSS VARIABLES ----------------------------------------- */
+:root{
+  --emerald:#50C589;
+  --copper:#B18A71;
+  --bg0:#020306;
+  --bg1:#0a0e14;
+  --bg2:#0d1117;
+  --bg3:#141C25;
+  --bg4:#1a2230;
+  --white:#ffffff;
+  --muted:rgba(255,255,255,.62);
+  --subtle:rgba(255,255,255,.35);
+  --border:rgba(255,255,255,.08);
+  --border-e:rgba(80,197,137,.18);
+  --radius:10px;
+  --radius-lg:18px;
+  --nav-h:72px;
+  --trans:all .22s ease;
+}
+
+/* --- LAYOUT ------------------------------------------------ */
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px;}
+section{padding:100px 0;}
+@media(max-width:767px){section{padding:64px 0;}}
+
+/* --- FADE-IN ANIMATION ------------------------------------- */
+.fi{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease;}
+.fi.v{opacity:1;transform:none;}
+
+/* --- EYEBROW LABEL ----------------------------------------- */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--emerald);margin-bottom:14px;
+}
+.eyebrow::before{content:'';display:block;width:18px;height:2px;background:var(--emerald);border-radius:2px;}
+
+/* --- SECTION HEADINGS -------------------------------------- */
+.sec-hd{text-align:center;margin-bottom:56px;}
+.sec-hd h2{font-size:clamp(28px,4vw,48px);font-weight:800;color:#fff;}
+.sec-hd p{margin-top:14px;color:var(--muted);font-size:17px;max-width:560px;margin-left:auto;margin-right:auto;}
+
+/* --- BUTTONS ----------------------------------------------- */
+.btn-p{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:13px 26px;border-radius:8px;font-size:15px;font-weight:700;
+  background:var(--emerald);color:#0a1208;
+  transition:var(--trans);white-space:nowrap;border:2px solid var(--emerald);
+}
+.btn-p:hover{background:#3db876;border-color:#3db876;transform:translateY(-1px);}
+.btn-o{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 24px;border-radius:8px;font-size:14px;font-weight:700;
+  background:transparent;color:var(--emerald);
+  border:1.5px solid var(--emerald);transition:var(--trans);
+}
+.btn-o:hover{background:rgba(80,197,137,.1);}
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+#nav{
+  position:fixed;top:0;left:0;right:0;z-index:900;
+  height:var(--nav-h);
+  background:rgba(2,3,6,.85);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s,background .3s;
+}
+#nav.sc{border-bottom-color:var(--border);background:rgba(2,3,6,.97);}
+.nav-row{
+  max-width:1160px;margin:0 auto;padding:0 24px;
+  height:var(--nav-h);display:flex;align-items:center;gap:32px;
+}
+.logotype{flex-shrink:0;}
+.nav-links-d{
+  display:flex;align-items:center;gap:28px;flex:1;justify-content:center;
+}
+.nav-links-d a{
+  font-size:14px;font-weight:600;color:var(--muted);
+  transition:color .2s;position:relative;padding-bottom:3px;
+}
+.nav-links-d a:hover{color:#fff;}
+.nav-links-d a.active{color:#fff;}
+.nav-links-d a.active::after,
+.nav-links-d a:hover::after{
+  content:'';position:absolute;bottom:-2px;left:0;right:0;height:2px;
+  background:var(--emerald);border-radius:2px;
+}
+.nav-cta-d{flex-shrink:0;}
+.ham{
+  display:none;flex-direction:column;justify-content:center;gap:5px;
+  width:36px;height:36px;padding:4px;margin-left:auto;
+}
+.ham span{display:block;height:2px;background:#fff;border-radius:2px;transition:var(--trans);}
+.ham.o span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+.ham.o span:nth-child(2){opacity:0;}
+.ham.o span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
+.drawer{
+  display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;
+  background:rgba(2,3,6,.98);backdrop-filter:blur(14px);
+  flex-direction:column;padding:32px 24px;gap:4px;
+  overflow-y:auto;z-index:899;
+}
+.drawer.o{display:flex;}
+.drawer a{
+  font-size:18px;font-weight:600;color:var(--muted);
+  padding:14px 0;border-bottom:1px solid var(--border);
+  transition:color .2s;
+}
+.drawer a:hover{color:#fff;}
+.dcta{
+  margin-top:20px;display:inline-flex!important;align-items:center;
+  padding:14px 24px!important;background:var(--emerald)!important;
+  color:#0a1208!important;border-radius:8px;font-weight:700!important;
+  border:none!important;justify-content:center;
+}
+@media(max-width:900px){
+  .nav-links-d,.nav-cta-d{display:none;}
+  .ham{display:flex;}
+}
+@media(min-width:901px){.drawer{display:none!important;}}
+
+/* ============================================================
+   PAGE HERO (inner pages)
+   ============================================================ */
+#hero-inner{
+  padding-top:calc(var(--nav-h) + 80px);
+  padding-bottom:80px;
+  background:var(--bg1);
+  border-bottom:1px solid var(--border);
+  position:relative;overflow:hidden;
+}
+#hero-inner::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 60% at 70% 50%,rgba(80,197,137,.07) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-inner-wrap{max-width:760px;}
+.hero-inner-wrap .eyebrow{margin-bottom:18px;}
+.page-h1{
+  font-size:clamp(36px,5.5vw,64px);font-weight:800;line-height:1.1;
+  letter-spacing:-.02em;margin-bottom:20px;
+}
+.page-h1 .g{color:var(--emerald);}
+.page-h1 .c{color:var(--copper);}
+.page-sub{
+  font-size:clamp(16px,2vw,20px);color:var(--muted);
+  max-width:600px;line-height:1.6;margin-bottom:36px;
+}
+
+/* ============================================================
+   STATS STRIP
+   ============================================================ */
+#stats{
+  padding:56px 0;
+  background:var(--bg2);
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+}
+.stats-wrap{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:0;
+}
+.stat{
+  padding:32px 36px;
+  border-right:1px solid var(--border);
+  text-align:center;
+}
+.stat:last-child{border-right:none;}
+.stat-n{
+  font-size:clamp(36px,4.5vw,52px);font-weight:800;
+  letter-spacing:-.03em;line-height:1;margin-bottom:8px;
+  color:var(--emerald);
+}
+.stat-l{font-size:14px;color:var(--muted);margin-bottom:14px;line-height:1.4;}
+.stat-tag{display:flex;justify-content:center;}
+.stat-client-logo{height:22px;width:auto;object-fit:contain;opacity:.65;filter:brightness(0) invert(1);}
+@media(max-width:640px){
+  .stats-wrap{grid-template-columns:1fr;}
+  .stat{border-right:none;border-bottom:1px solid var(--border);padding:28px 20px;}
+  .stat:last-child{border-bottom:none;}
+}
+
+/* ============================================================
+   TESTIMONIALS CAROUSEL
+   ============================================================ */
+#testi{background:var(--bg0);}
+.tc-vp{overflow:hidden;position:relative;}
+.tc-track{
+  display:flex;transition:transform .45s cubic-bezier(.4,0,.2,1);
+}
+.tc-slide{min-width:100%;padding:0 4px;}
+.tc-card{
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:var(--radius-lg);
+  padding:40px 44px;
+  position:relative;
+}
+.tc-card::before{
+  content:'\201C';position:absolute;top:24px;right:36px;
+  font-size:80px;color:rgba(80,197,137,.12);font-family:Georgia,serif;
+  line-height:1;pointer-events:none;
+}
+.tc-quote{
+  font-size:18px;line-height:1.7;color:var(--muted);
+  margin-bottom:32px;font-style:italic;
+}
+.tc-author{display:flex;align-items:center;gap:16px;}
+.tc-av{width:52px;height:52px;border-radius:50%;object-fit:cover;
+  border:2px solid var(--emerald);flex-shrink:0;}
+.tc-name{font-size:16px;font-weight:700;color:#fff;margin-bottom:3px;}
+.tc-role{font-size:13px;color:var(--subtle);}
+.tc-ctrl{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-top:28px;
+}
+.tc-dots{display:flex;gap:8px;}
+.tc-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:var(--border);transition:var(--trans);
+  border:none;
+}
+.tc-dot.a{background:var(--emerald);width:24px;border-radius:4px;}
+.tc-arrows{display:flex;gap:10px;}
+.tc-arr{
+  width:38px;height:38px;border-radius:50%;
+  border:1.5px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--muted);transition:var(--trans);
+}
+.tc-arr:hover{border-color:var(--emerald);color:var(--emerald);}
+@media(min-width:900px){
+  #tc-track{
+    display:grid!important;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    transform:none!important;
+  }
+  .tc-slide{min-width:unset!important;}
+  .tc-ctrl{justify-content:center;}
+  .tc-arrows{display:none;}
+}
+
+/* ============================================================
+   CLIENT LOGO MARQUEE
+   ============================================================ */
+#logos{padding:56px 0;background:var(--bg1);}
+#logos h2{font-size:clamp(22px,3vw,36px);font-weight:800;margin-bottom:10px;}
+.logos-sub{color:var(--muted);font-size:15px;max-width:600px;margin:0 auto 40px;text-align:center;}
+.mq-outer{overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);}
+.mq-track{
+  display:flex;align-items:center;gap:0;
+  animation:marquee 28s linear infinite;
+  width:max-content;
+}
+.mq-track:hover{animation-play-state:paused;}
+@keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+.lg-pill{
+  padding:14px 32px;
+  display:flex;align-items:center;justify-content:center;
+  border-right:1px solid var(--border);
+}
+.lg-pill:last-child{border-right:none;}
+.lg-pill img{height:28px;width:auto;object-fit:contain;filter:brightness(0) invert(1);opacity:.55;transition:opacity .2s;}
+.lg-pill:hover img{opacity:1;}
+
+/* ============================================================
+   CAPABILITY MARQUEE STRIP
+   ============================================================ */
+#cap-strip{
+  padding:0;
+  background:var(--bg3);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  overflow:hidden;
+}
+#cap-strip>div{padding:14px 0;}
+.cs-track{
+  display:flex;align-items:center;gap:0;
+  animation:marquee 32s linear infinite;
+  width:max-content;
+}
+.cs-item{
+  font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--subtle);padding:0 20px;white-space:nowrap;
+}
+.cs-sep{color:var(--emerald);font-size:8px;opacity:.6;flex-shrink:0;}
+
+/* ============================================================
+   ABOUT / FOUNDER
+   ============================================================ */
+#about{background:var(--bg2);}
+.about-g{
+  display:grid;grid-template-columns:1fr 420px;
+  gap:72px;align-items:center;
+}
+.about-t h2{font-size:clamp(28px,4vw,46px);font-weight:800;margin-bottom:20px;}
+.about-t p{color:var(--muted);font-size:16px;line-height:1.7;margin-bottom:14px;}
+.about-t p:last-of-type{margin-bottom:28px;}
+.about-t strong{color:#fff;font-weight:700;}
+.tags{display:flex;flex-wrap:wrap;gap:10px;}
+.tag{
+  padding:6px 14px;border-radius:6px;
+  font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  background:rgba(80,197,137,.1);color:var(--emerald);
+  border:1px solid var(--border-e);
+}
+.about-founder-img{
+  width:100%;max-width:380px;border-radius:var(--radius-lg);
+  object-fit:cover;aspect-ratio:3/4;
+  border:1px solid var(--border);
+}
+@media(max-width:900px){
+  .about-g{grid-template-columns:1fr;gap:40px;}
+  .about-img-wrap{display:flex;justify-content:center;}
+  .about-founder-img{max-width:280px;aspect-ratio:1/1;}
+}
+
+/* ============================================================
+   SERVICES
+   ============================================================ */
+#services{background:var(--bg0);}
+.svc-head{margin-bottom:16px;}
+.svc-head h2{font-size:clamp(28px,4vw,46px);font-weight:800;}
+.svc-intro{color:var(--muted);font-size:16px;max-width:680px;margin-bottom:56px;}
+.svc-cat{
+  display:grid;grid-template-columns:420px 1fr;
+  gap:0;border:1px solid var(--border);border-radius:var(--radius-lg);
+  overflow:hidden;margin-bottom:28px;
+}
+.svc-cat.flip{grid-template-columns:1fr 420px;}
+.svc-cat.flip .svc-img{order:2;}
+.svc-cat.flip .svc-cards{order:1;}
+.svc-img{
+  position:relative;min-height:360px;
+  background-size:cover;background-position:center;
+}
+.svc-img-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(2,3,6,.85) 0%,rgba(20,28,37,.7) 100%);
+}
+.svc-cat-eye{
+  position:absolute;top:24px;left:24px;z-index:1;
+  font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:rgba(255,255,255,.4);
+}
+.svc-cat-h{
+  position:absolute;bottom:28px;left:24px;z-index:1;
+  font-size:clamp(22px,2.5vw,32px);font-weight:800;line-height:1.2;
+  color:#fff;
+}
+.svc-grid{
+  position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+                    linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+  background-size:40px 40px;
+}
+.svc-cards{padding:40px 44px;display:flex;flex-direction:column;gap:20px;justify-content:center;}
+.svc-intro-txt{font-size:14px;color:var(--subtle);font-style:italic;}
+.svc-card{
+  background:rgba(255,255,255,.03);border:1px solid var(--border);
+  border-radius:var(--radius);padding:20px 22px;
+  transition:border-color .2s;
+}
+.svc-card:hover{border-color:rgba(80,197,137,.3);}
+.svc-ch{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+.svc-ico{
+  width:28px;height:28px;border-radius:7px;
+  background:rgba(80,197,137,.12);border:1px solid var(--border-e);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--emerald);flex-shrink:0;
+}
+.svc-ch h4{font-size:15px;font-weight:700;color:#fff;}
+.svc-card p{font-size:14px;color:var(--muted);line-height:1.6;}
+.svc-cta{padding-top:8px;}
+@media(max-width:900px){
+  .svc-cat,.svc-cat.flip{grid-template-columns:1fr;}
+  .svc-cat.flip .svc-img{order:0;}
+  .svc-cat.flip .svc-cards{order:1;}
+  .svc-img{min-height:240px;}
+  .svc-cards{padding:28px 24px;}
+}
+
+/* ============================================================
+   VALUE PROPS
+   ============================================================ */
+#vals{background:var(--bg1);border-top:1px solid var(--border);}
+.val-g{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:24px;
+}
+.val-item{
+  padding:28px 24px;border-radius:var(--radius);
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.02);
+  transition:border-color .2s,background .2s;
+}
+.val-item:hover{border-color:var(--border-e);background:rgba(80,197,137,.04);}
+.val-ico{
+  width:34px;height:34px;color:var(--emerald);margin-bottom:16px;
+}
+.val-item h3{font-size:16px;font-weight:700;margin-bottom:10px;color:#fff;}
+.val-item p{font-size:14px;color:var(--muted);line-height:1.6;}
+@media(max-width:900px){.val-g{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:500px){.val-g{grid-template-columns:1fr;}}
+
+/* ============================================================
+   PROCESS
+   ============================================================ */
+#process{background:var(--bg0);}
+#process h2{font-size:clamp(26px,4vw,46px);font-weight:800;margin-bottom:48px;}
+.proc-list{display:flex;flex-direction:column;gap:0;}
+.proc-step{
+  display:flex;gap:28px;align-items:flex-start;
+  padding:28px 0;border-bottom:1px solid var(--border);
+  transition:var(--trans);
+}
+.proc-step:last-child{border-bottom:none;}
+.p-num{
+  font-size:13px;font-weight:800;letter-spacing:.06em;
+  color:var(--subtle);min-width:36px;padding-top:4px;
+}
+.p-active .p-num{color:var(--emerald);}
+.p-body h4{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px;}
+.p-body p{font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:10px;}
+.ms{
+  display:inline-block;font-size:11px;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;
+  color:var(--emerald);background:rgba(80,197,137,.1);
+  padding:4px 10px;border-radius:4px;
+}
+.proc-foot{margin-top:48px;}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+#faq{background:var(--bg1);}
+#faq h2{font-size:clamp(26px,4vw,46px);font-weight:800;margin-bottom:40px;}
+.faq-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--border);}
+.faq-item{border-bottom:1px solid var(--border);}
+.faq-btn{
+  width:100%;display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding:22px 0;text-align:left;
+  font-size:16px;font-weight:600;color:var(--muted);
+  transition:color .2s;
+}
+.faq-btn:hover,.faq-btn.o{color:#fff;}
+.faq-ico{width:24px;height:24px;border-radius:50%;background:var(--bg3);
+  border:1px solid var(--border);display:flex;align-items:center;
+  justify-content:center;flex-shrink:0;color:var(--emerald);transition:transform .25s;}
+.faq-btn.o .faq-ico{transform:rotate(45deg);}
+.faq-ans{display:none;overflow:hidden;}
+.faq-ans.o{display:block;}
+.faq-ans-inner{padding:0 0 22px;font-size:15px;color:var(--muted);line-height:1.7;max-width:760px;}
+
+/* ============================================================
+   INSIGHTS / EVENTS
+   ============================================================ */
+#insights{background:var(--bg2);}
+#insights h2{font-size:clamp(24px,3.5vw,42px);font-weight:800;}
+.insights-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:48px;}
+.insight-card{
+  border:1px solid var(--border);border-radius:var(--radius-lg);
+  overflow:hidden;background:var(--bg3);
+  transition:border-color .2s,transform .2s;
+}
+.insight-card:hover{border-color:rgba(80,197,137,.3);transform:translateY(-3px);}
+.insight-thumb{width:100%;height:200px;object-fit:cover;}
+.insight-body{padding:24px;}
+.insight-body h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:6px;}
+.insight-sub{font-size:13px;color:var(--emerald);font-weight:600;margin-bottom:10px;}
+.insight-desc{font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:16px;}
+.insight-link{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:14px;font-weight:700;color:var(--emerald);
+  transition:gap .2s;
+}
+.insight-link:hover{gap:11px;}
+@media(max-width:640px){.insights-grid{grid-template-columns:1fr;}}
+
+/* ============================================================
+   FINAL CTA
+   ============================================================ */
+#cta-final{
+  background:var(--bg3);
+  border-top:1px solid var(--border);
+}
+.ctaf{
+  max-width:600px;margin:0 auto;text-align:center;
+}
+.ctaf h2{font-size:clamp(28px,4vw,50px);font-weight:800;margin-bottom:14px;}
+.ctaf .sub{font-size:18px;color:var(--muted);margin-bottom:16px;font-weight:600;}
+.ctaf .body{font-size:15px;color:var(--subtle);line-height:1.7;margin-bottom:36px;}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+#footer{
+  background:var(--bg1);
+  border-top:1px solid var(--border);
+  padding:64px 0 0;
+}
+#footer .wrap{display:flex;flex-direction:column;gap:48px;}
+.foot-brand{max-width:280px;}
+.foot-tag{font-size:14px;color:var(--muted);line-height:1.6;margin:16px 0 8px;}
+.foot-loc{font-size:13px;color:var(--subtle);}
+.foot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;}
+.foot-col h4{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--subtle);margin-bottom:16px;}
+.foot-col li{margin-bottom:10px;}
+.foot-col a{font-size:14px;color:var(--muted);transition:color .2s;}
+.foot-col a:hover{color:#fff;}
+.foot-bot{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:20px 0;border-top:1px solid var(--border);
+}
+.foot-copy{font-size:13px;color:var(--subtle);}
+.soc{display:flex;gap:12px;}
+.soc a{
+  width:34px;height:34px;border-radius:50%;
+  border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--muted);transition:var(--trans);
+}
+.soc a:hover{border-color:var(--emerald);color:var(--emerald);}
+@media(max-width:900px){.foot-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:600px){
+  .foot-grid{grid-template-columns:1fr 1fr;}
+  .foot-bot{flex-direction:column;gap:16px;text-align:center;}
+}
+
+/* ============================================================
+   STICKY BOTTOM CTA BAR
+   ============================================================ */
+.stk{
+  position:fixed;bottom:0;left:0;right:0;z-index:800;
+  background:var(--bg3);border-top:1px solid var(--border);
+  padding:12px 24px;text-align:center;
+  display:none;
+}
+@media(max-width:900px){.stk{display:block;}}
+.stk a{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:100%;max-width:400px;
+  padding:14px;border-radius:8px;
+  background:var(--emerald);color:#0a1208;
+  font-size:15px;font-weight:700;
+}
+
+/* ============================================================
+   BACK TO TOP
+   ============================================================ */
+#btt{
+  position:fixed;bottom:80px;right:24px;z-index:800;
+  width:40px;height:40px;border-radius:50%;
+  background:var(--bg3);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--muted);transition:var(--trans);
+  opacity:0;pointer-events:none;
+}
+#btt.sh{opacity:1;pointer-events:auto;}
+#btt:hover{border-color:var(--emerald);color:var(--emerald);}
+@media(max-width:900px){#btt{bottom:80px;}}
+
+/* ============================================================
+   PAGE-SPECIFIC: TESTIMONIALS
+   ============================================================ */
+.testi-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+.testi-card{
+  background:var(--bg3);border:1px solid var(--border);
+  border-radius:var(--radius-lg);padding:32px 28px;
+  display:flex;flex-direction:column;gap:20px;
+  transition:border-color .2s,transform .2s;
+}
+.testi-card:hover{border-color:rgba(80,197,137,.3);transform:translateY(-3px);}
+.testi-card .tc-quote{font-size:15px;line-height:1.7;color:var(--muted);font-style:italic;flex:1;}
+.testi-card .tc-author{display:flex;align-items:center;gap:12px;}
+.testi-card .tc-av{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid var(--emerald);flex-shrink:0;}
+.testi-card .tc-name{font-size:15px;font-weight:700;color:#fff;}
+.testi-card .tc-role{font-size:12px;color:var(--subtle);}
+.video-row{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+.video-card{border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);}
+.video-card iframe{width:100%;aspect-ratio:16/9;display:block;border:none;}
+.video-card-body{padding:16px 18px;background:var(--bg3);}
+.video-card-body h4{font-size:15px;font-weight:700;color:#fff;line-height:1.4;}
+@media(max-width:900px){
+  .testi-grid{grid-template-columns:1fr;}
+  .video-row{grid-template-columns:1fr;}
+}
+@media(min-width:640px) and (max-width:900px){
+  .testi-grid{grid-template-columns:repeat(2,1fr);}
+  .video-row{grid-template-columns:repeat(2,1fr);}
+}
+
+/* ============================================================
+   PAGE-SPECIFIC: CASE STUDIES
+   ============================================================ */
+.cs-hero-stat{
+  display:inline-block;
+  font-size:clamp(42px,6vw,72px);font-weight:800;
+  color:var(--emerald);line-height:1;letter-spacing:-.03em;
+  margin-bottom:6px;
+}
+.cs-hero-stat.copper{color:var(--copper);}
+.cs-block{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:64px;align-items:start;padding:80px 0;
+  border-bottom:1px solid var(--border);
+}
+.cs-block:last-child{border-bottom:none;}
+.cs-block.flip{direction:rtl;}
+.cs-block.flip>*{direction:ltr;}
+.cs-logo{height:36px;width:auto;object-fit:contain;opacity:.9;
+  filter:brightness(0) invert(1);margin-bottom:28px;}
+.cs-block h2{font-size:clamp(26px,3.5vw,42px);font-weight:800;
+  line-height:1.15;margin-bottom:16px;}
+.cs-block p{font-size:16px;color:var(--muted);line-height:1.7;margin-bottom:24px;}
+.cs-metrics{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:16px;margin:24px 0;
+}
+.cs-metric{
+  padding:20px;background:rgba(255,255,255,.03);
+  border:1px solid var(--border);border-radius:var(--radius);text-align:center;
+}
+.cs-metric-n{
+  font-size:clamp(28px,3.5vw,40px);font-weight:800;
+  color:var(--emerald);line-height:1;margin-bottom:6px;
+}
+.cs-metric-n.copper{color:var(--copper);}
+.cs-metric-l{font-size:13px;color:var(--muted);}
+.cs-video{border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);}
+.cs-video iframe{width:100%;aspect-ratio:16/9;display:block;border:none;}
+.cs-quote-box{
+  background:var(--bg3);border:1px solid var(--border-e);
+  border-radius:var(--radius-lg);padding:32px 36px;margin-top:24px;
+}
+.cs-quote-box blockquote{
+  font-size:17px;font-style:italic;color:var(--muted);
+  line-height:1.7;margin-bottom:20px;
+}
+.cs-quote-box blockquote::before{content:'\201C';color:var(--emerald);font-size:24px;line-height:0;vertical-align:-.4em;margin-right:4px;}
+.cs-quote-author{display:flex;align-items:center;gap:12px;}
+.cs-quote-author img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--emerald);flex-shrink:0;}
+.cs-quote-author strong{font-size:15px;color:#fff;display:block;}
+.cs-quote-author span{font-size:12px;color:var(--subtle);}
+.icon-check{display:flex;align-items:flex-start;gap:10px;margin-bottom:14px;}
+.icon-check svg{flex-shrink:0;margin-top:3px;color:var(--emerald);}
+.icon-check p{font-size:15px;color:var(--muted);line-height:1.6;margin:0;}
+@media(max-width:900px){
+  .cs-block,.cs-block.flip{grid-template-columns:1fr;direction:ltr;}
+  .cs-metrics{grid-template-columns:repeat(2,1fr);}
+}
+
+/* ============================================================
+   PAGE-SPECIFIC: FINANCE MARKET LEADERS
+   ============================================================ */
+.fml-hero-meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;}
+.fml-pill{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:10px 20px;border-radius:100px;font-size:14px;font-weight:700;
+  border:1.5px solid var(--border);color:var(--muted);transition:var(--trans);
+}
+.fml-pill svg{flex-shrink:0;}
+.fml-pill:hover{border-color:var(--emerald);color:var(--emerald);}
+.episode-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:24px;
+}
+.ep-card{
+  border:1px solid var(--border);border-radius:var(--radius-lg);
+  overflow:hidden;background:var(--bg3);
+  display:flex;flex-direction:column;
+  transition:border-color .2s,transform .2s;
+}
+.ep-card:hover{border-color:rgba(80,197,137,.3);transform:translateY(-3px);}
+.ep-thumb-wrap{position:relative;overflow:hidden;}
+.ep-thumb{width:100%;height:220px;object-fit:cover;display:block;transition:transform .35s;}
+.ep-card:hover .ep-thumb{transform:scale(1.04);}
+.ep-play{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:rgba(2,3,6,.35);opacity:0;transition:opacity .2s;
+}
+.ep-card:hover .ep-play{opacity:1;}
+.ep-play svg{width:52px;height:52px;color:#fff;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5));}
+.ep-body{padding:22px 24px;flex:1;display:flex;flex-direction:column;}
+.ep-body h3{font-size:16px;font-weight:700;color:#fff;line-height:1.4;margin-bottom:10px;}
+.ep-body p{font-size:14px;color:var(--muted);line-height:1.6;flex:1;margin-bottom:16px;}
+.ep-link{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:13px;font-weight:700;color:var(--emerald);
+  transition:gap .2s;align-self:flex-start;
+}
+.ep-link:hover{gap:10px;}
+.discover-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:22px;margin-top:40px;
+}
+.discover-card{
+  padding:28px;background:rgba(255,255,255,.03);
+  border:1px solid var(--border);border-radius:var(--radius);
+  transition:border-color .2s;
+}
+.discover-card:hover{border-color:var(--border-e);}
+.discover-card h4{font-size:16px;font-weight:700;color:var(--emerald);margin-bottom:10px;}
+.discover-card p{font-size:14px;color:var(--muted);line-height:1.6;}
+.why-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:24px;margin-top:40px;
+}
+.why-card{
+  padding:32px;background:rgba(255,255,255,.03);
+  border:1px solid var(--border);border-radius:var(--radius-lg);
+  transition:border-color .2s,background .2s;
+}
+.why-card:hover{border-color:var(--border-e);background:rgba(80,197,137,.03);}
+.why-card h4{font-size:17px;font-weight:700;color:#fff;margin-bottom:12px;}
+.why-card p{font-size:14px;color:var(--muted);line-height:1.6;}
+.subscribe-row{
+  display:flex;align-items:center;justify-content:center;
+  gap:16px;flex-wrap:wrap;margin-top:32px;
+}
+.btn-spotify{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:13px 26px;border-radius:8px;font-size:15px;font-weight:700;
+  background:#1DB954;color:#fff;
+  transition:var(--trans);border:2px solid #1DB954;
+}
+.btn-spotify:hover{background:#17a34a;border-color:#17a34a;transform:translateY(-1px);}
+@media(max-width:900px){
+  .episode-grid,.discover-grid,.why-grid{grid-template-columns:1fr;}
+}
+@media(min-width:640px) and (max-width:900px){
+  .episode-grid,.discover-grid{grid-template-columns:repeat(2,1fr);}
+  .why-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+  </style>
+</head>
+<body>
+<header id="nav" role="banner">
+  <div class="nav-row">
+    <a href="https://n3tworx.com/" class="logotype" aria-label="N3TWORX home" style="display:inline-flex;align-items:center;flex-shrink:0;">
+      <img src="assets/SecondaryLogo-o6o0X.png" alt="N3TWORX" style="height:58px;width:auto;display:block;" />
+    </a>
+    <nav class="nav-links-d" aria-label="Primary navigation">
+      <a href="https://n3tworx.com/">Why N3tworx</a>
+      <a href="https://n3tworx.com/#services">Services</a>
+      <a href="https://n3tworx.com/testimonials">Testimonials</a>
+      <a href="https://n3tworx.com/case-studies">Case Studies</a>
+      <a href="https://n3tworx.com/finance-market-leaders">Finance Market Leaders</a>
+    </nav>
+    <a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w"
+       class="btn-p nav-cta-d" target="_blank" rel="noopener">Contact</a>
+    <button class="ham" id="ham" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="drawer" id="drawer" aria-hidden="true" role="navigation" aria-label="Mobile navigation">
+    <a href="https://n3tworx.com/">Why N3tworx</a>
+    <a href="https://n3tworx.com/#services">Services</a>
+    <a href="https://n3tworx.com/testimonials">Testimonials</a>
+    <a href="https://n3tworx.com/case-studies">Case Studies</a>
+    <a href="https://n3tworx.com/finance-market-leaders">Finance Market Leaders</a>
+    <a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w"
+       class="btn-p dcta" target="_blank" rel="noopener">Book a Growth Session</a>
+  </div>
+</header>
+<main>
+
+<!-- HERO -->
+<section id="hero-inner" aria-label="Testimonials hero">
+  <div class="wrap">
+    <div class="hero-inner-wrap fi">
+      <div class="eyebrow">Client Feedback</div>
+      <h1 class="page-h1">Success Stories<br />from Our <span class="g">Implementation</span></h1>
+      <p class="page-sub">Real testimonials from CFD brokers and prop trading firms who've built acquisition systems, grown deposits, and scaled with N3TWORX.</p>
+      <a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w"
+         class="btn-p" target="_blank" rel="noopener">
+        Book a Growth Session
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6.5 2.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<section id="stats" aria-label="Client results">
+  <div class="wrap">
+    <div class="stats-wrap">
+      <div class="stat fi">
+        <div class="stat-n" data-from="50" data-to="200" data-pre="$" data-suf="M" style="color:var(--emerald)">$50M</div>
+        <p class="stat-l">ARR growth in 24 months</p>
+        <span class="stat-tag"><img src="assets/AXI-J4IXi.png" alt="AXI" class="stat-client-logo" /></span>
+      </div>
+      <div class="stat fi" style="transition-delay:.1s">
+        <div class="stat-n" data-from="500" data-to="1500" data-suf="+">500</div>
+        <p class="stat-l">Monthly Active Traders in 10 months</p>
+        <span class="stat-tag"><img src="assets/BLUEBERRYMARKETS-DLYk_.png" alt="Blueberry Markets" class="stat-client-logo" /></span>
+      </div>
+      <div class="stat fi" style="transition-delay:.2s">
+        <div class="stat-n" data-from="0" data-to="300" data-suf="%" style="color:var(--copper)">0%</div>
+        <p class="stat-l">Monthly Revenue Increase in 6 months</p>
+        <span class="stat-tag"><img src="assets/htrader-logo-mono-white-rgb-AqedH.png" alt="HTrader" class="stat-client-logo" /></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO TESTIMONIALS -->
+<section id="videos" aria-label="Video testimonials" style="background:var(--bg1);">
+  <div class="wrap">
+    <div class="sec-hd fi">
+      <div class="eyebrow">On Camera</div>
+      <h2>Watch What Our Clients Say</h2>
+      <p>Unscripted. Unedited. Real results, in their own words.</p>
+    </div>
+    <div class="video-row">
+      <div class="video-card fi">
+        <iframe src="https://www.youtube.com/embed/Pj1quTpLvE8?fs=1&mute=0&loop=0&autoplay=0&controls=1" title="Axi testimonial" frameborder="0" allowfullscreen></iframe>
+        <div class="video-card-body">
+          <h4>How We Drove $150M In New Growth for Axi Corp</h4>
+        </div>
+      </div>
+      <div class="video-card fi" style="transition-delay:.1s">
+        <iframe src="https://www.youtube.com/embed/omM-ujJ7hwM?fs=1&mute=0&loop=0&autoplay=0&controls=1" title="Blueberry Markets 375%" frameborder="0" allowfullscreen></iframe>
+        <div class="video-card-body">
+          <h4>How We Grew New Clients 375% for Blueberry Markets in 10 months</h4>
+        </div>
+      </div>
+      <div class="video-card fi" style="transition-delay:.2s">
+        <iframe src="https://www.youtube.com/embed/NUMyBMFODbI?fs=1&mute=0&loop=0&autoplay=0&controls=1" title="Blueberry x3" frameborder="0" allowfullscreen></iframe>
+        <div class="video-card-body">
+          <h4>How We Got x3 New Clients Per Month For Blueberry Markets</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WRITTEN TESTIMONIALS -->
+<section id="testi" aria-label="Client testimonials" style="background:var(--bg0);">
+  <div class="wrap">
+    <div class="sec-hd fi">
+      <div class="eyebrow">Client Feedback</div>
+      <h2>What Our Clients Say</h2>
+    </div>
+    <div class="testi-grid">
+
+      <div class="testi-card fi">
+        <p class="tc-quote">"Christopher and the N3TWORX team brought an operator-level perspective to our growth strategy that no other agency had come close to. They understood the compliance constraints, the GEO dynamics, and the trader acquisition funnel from day one. The results speak for themselves."</p>
+        <div class="tc-author">
+          <img src="assets/LouisCooper-A6MPd.jpeg" alt="Louis Cooper" class="tc-av" />
+          <div><div class="tc-name">Louis Cooper</div><div class="tc-role">CCO, Axicorp</div></div>
+        </div>
+      </div>
+
+      <div class="testi-card fi" style="transition-delay:.1s">
+        <p class="tc-quote">"What sets N3TWORX apart is that they've actually operated inside firms like ours. They're not learning on our budget. From performance media to community infrastructure, every recommendation came backed by real data and experience in this exact space."</p>
+        <div class="tc-author">
+          <img src="assets/DeanHyde-DkUJo.jpeg" alt="Dean Hyde" class="tc-av" />
+          <div><div class="tc-name">Dean Hyde</div><div class="tc-role">CEO, Blueberry Markets</div></div>
+        </div>
+      </div>
+
+      <div class="testi-card fi" style="transition-delay:.2s">
+        <p class="tc-quote">"N3TWORX rebuilt our entire acquisition architecture. The attribution setup alone changed how we make media decisions. We went from guessing to knowing exactly which channel, creative, and audience was driving funded accounts. That's the level of precision they operate at."</p>
+        <div class="tc-author">
+          <img src="assets/AjakBiar-M76Jl.jpg" alt="Ajak Biar" class="tc-av" />
+          <div><div class="tc-name">Ajak Biar</div><div class="tc-role">CCO, Blueberry Markets</div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LOGO STRIP -->
+<section id="logos" aria-label="Client logos" style="background:var(--bg2);">
+  <div class="wrap">
+    <div class="fi" style="text-align:center;">
+      <div class="eyebrow">Finance Market Leaders</div>
+      <h2 style="font-size:clamp(22px,3.5vw,40px);">Trusted by Finance Firms Across 10+ Markets</h2>
+      <p class="logos-sub">We work exclusively with CFD brokers and prop trading firms. No generalist clients, no learning curve.</p>
+    </div>
+  </div>
+  <div class="mq-outer" aria-hidden="true">
+    <div class="mq-track">
+      <div class="lg-pill"><img src="assets/AXI-J4IXi.png" alt="AXI" /></div>
+      <div class="lg-pill"><img src="assets/titanfx-qf6c6.png" alt="TitanFX" /></div>
+      <div class="lg-pill"><img src="assets/hantec-F2Cs2.png" alt="Hantec" /></div>
+      <div class="lg-pill"><img src="assets/BLUEBERRYMARKETS-DLYk_.png" alt="Blueberry Markets" /></div>
+      <div class="lg-pill"><img src="assets/hsbc-zAUtm.png" alt="HSBC" /></div>
+      <div class="lg-pill"><img src="assets/suncorp-amyCI.png" alt="Suncorp" /></div>
+      <div class="lg-pill"><img src="assets/client-hantecmarkets1-d4QAI.svg" alt="Hantec Markets" /></div>
+      <div class="lg-pill"><img src="assets/client-taurex-0wyzW.svg" alt="Taurex" /></div>
+      <div class="lg-pill"><img src="assets/htrader-logo-mono-white-rgb-AqedH.png" alt="HTrader" /></div>
+      <div class="lg-pill"><img src="assets/AXI-J4IXi.png" alt="AXI" /></div>
+      <div class="lg-pill"><img src="assets/titanfx-qf6c6.png" alt="TitanFX" /></div>
+      <div class="lg-pill"><img src="assets/hantec-F2Cs2.png" alt="Hantec" /></div>
+      <div class="lg-pill"><img src="assets/BLUEBERRYMARKETS-DLYk_.png" alt="Blueberry Markets" /></div>
+      <div class="lg-pill"><img src="assets/hsbc-zAUtm.png" alt="HSBC" /></div>
+      <div class="lg-pill"><img src="assets/suncorp-amyCI.png" alt="Suncorp" /></div>
+      <div class="lg-pill"><img src="assets/client-hantecmarkets1-d4QAI.svg" alt="Hantec Markets" /></div>
+      <div class="lg-pill"><img src="assets/client-taurex-0wyzW.svg" alt="Taurex" /></div>
+      <div class="lg-pill"><img src="assets/htrader-logo-mono-white-rgb-AqedH.png" alt="HTrader" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITY STRIP -->
+<div id="cap-strip" aria-hidden="true">
+  <div style="display:flex;overflow:hidden;">
+    <div class="cs-track">
+      <span class="cs-item">Proven Growth</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Global Reach</span><span class="cs-sep">◆</span>
+      <span class="cs-item">ROI Driven</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Strategic Ads</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Funnel Experts</span><span class="cs-sep">◆</span>
+      <span class="cs-item">AI Efficiency</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Custom Funnels</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Engagement Boost</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Community Building</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Lifecycle Partners</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Proven Growth</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Global Reach</span><span class="cs-sep">◆</span>
+      <span class="cs-item">ROI Driven</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Strategic Ads</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Funnel Experts</span><span class="cs-sep">◆</span>
+      <span class="cs-item">AI Efficiency</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Custom Funnels</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Engagement Boost</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Community Building</span><span class="cs-sep">◆</span>
+      <span class="cs-item">Lifecycle Partners</span><span class="cs-sep">◆</span>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section id="faq" aria-label="FAQ" style="background:var(--bg1);">
+  <div class="wrap">
+    <div class="fi">
+      <div class="eyebrow">Questions</div>
+      <h2 style="font-size:clamp(26px,4vw,46px);">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fi"><button class="faq-btn" aria-expanded="false">What makes N3TWORX different from a general digital marketing agency?<span class="faq-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-ans"><div class="faq-ans-inner">We work exclusively with CFD brokers and prop trading firms. Our team has operated inside these businesses at executive level — not as consultants, but as practitioners. A general agency learns on your budget. We don't.</div></div></div>
+      <div class="faq-item fi"><button class="faq-btn" aria-expanded="false">Do you work with firms outside of Australia?<span class="faq-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-ans"><div class="faq-ans-inner">Yes. We operate across APAC, MENA, and Europe. Our campaigns run in 10+ active markets and our team has experience managing media in 156 countries.</div></div></div>
+      <div class="faq-item fi"><button class="faq-btn" aria-expanded="false">How long before we see measurable results?<span class="faq-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-ans"><div class="faq-ans-inner">First campaigns are typically live within 10 business days of onboarding. Most clients see their first material shift in CPA within 60 to 90 days.</div></div></div>
+      <div class="faq-item fi"><button class="faq-btn" aria-expanded="false">Can you operate in regulated advertising environments?<span class="faq-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-ans"><div class="faq-ans-inner">Yes. We've operated in gambling, crypto, and financial services — the three most restricted categories in digital advertising. Restricted environments are our primary operating context.</div></div></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<section id="cta-final" aria-label="Book a growth session">
+  <div class="wrap">
+    <div class="ctaf fi">
+      <div class="eyebrow" style="justify-content:center;">Get Started</div>
+      <h2>Experience the Difference</h2>
+      <p class="sub">Ready to build a trader acquisition system?</p>
+      <p class="body">Book a 30-minute session. We'll review your current acquisition setup, identify where the spend is leaking, and walk through what a full-funnel approach looks like for your GEOs and product.</p>
+      <a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w" class="btn-p" target="_blank" rel="noopener">
+        Book Growth Session
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6.5 2.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+<footer id="footer" aria-label="Site footer">
+  <div class="wrap">
+    <div class="foot-brand">
+      <a href="https://n3tworx.com/" class="logotype" aria-label="N3TWORX home" style="display:inline-block;">
+        <img src="assets/SecondaryLogo-o6o0X.png" alt="N3TWORX" width="180" style="height:36px;width:auto;object-fit:contain;display:block;" />
+      </a>
+      <p class="foot-tag">We partner with finance firms and help them advance by +$100k/month revenue in 3 months with proven marketing strategies.</p>
+      <p class="foot-loc">Sydney, NSW, Australia</p>
+    </div>
+    <div class="foot-grid">
+      <div class="foot-col"><h4>Quick Links</h4><ul>
+        <li><a href="https://n3tworx.com/#services">Services</a></li>
+        <li><a href="https://n3tworx.com/case-studies">Case Studies</a></li>
+        <li><a href="https://n3tworx.com/testimonials">Testimonials</a></li>
+        <li><a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w" target="_blank" rel="noopener">Contact</a></li>
+      </ul></div>
+      <div class="foot-col"><h4>Services</h4><ul>
+        <li><a href="https://n3tworx.com/#services">CFD Marketing</a></li>
+        <li><a href="https://n3tworx.com/#services">Prop Marketing</a></li>
+        <li><a href="https://n3tworx.com/#services">CFD Products</a></li>
+        <li><a href="https://n3tworx.com/#services">Trading Rooms</a></li>
+        <li><a href="https://n3tworx.com/#services">CFD Consulting</a></li>
+        <li><a href="https://n3tworx.com/#services">Server Side Analytics</a></li>
+      </ul></div>
+      <div class="foot-col"><h4>Pages</h4><ul>
+        <li><a href="https://n3tworx.com/testimonials">Testimonials</a></li>
+        <li><a href="https://n3tworx.com/case-studies">Case Studies</a></li>
+        <li><a href="https://n3tworx.com/finance-market-leaders">Finance Market Leaders</a></li>
+      </ul></div>
+      <div class="foot-col"><h4>Support</h4><ul>
+        <li><a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w" target="_blank" rel="noopener">Contact Us</a></li>
+        <li><a href="https://n3tworx.com/#faq">FAQs</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bot">
+      <p class="foot-copy">&copy; 2026 N3tworx. All rights reserved.</p>
+      <div class="soc">
+        <a href="#" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="2" y="2" width="10" height="10" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M4.5 6.5v3M4.5 5v.01M7 9.5V7.5A1.5 1.5 0 0 1 10 7.5v2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+        <a href="#" aria-label="X / Twitter"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 2.5l9 9M11.5 2.5l-9 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="2" y="3.5" width="10" height="7" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M6 5.5l3 1.5-3 1.5V5.5z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="stk">
+  <a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w" target="_blank" rel="noopener">Book a Call</a>
+</div>
+<button id="btt" aria-label="Back to top">
+  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 9.5V2.5M2.5 6L6 2.5 9.5 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<script>
+const nav=document.getElementById('nav'),btt=document.getElementById('btt');
+window.addEventListener('scroll',()=>{nav.classList.toggle('sc',scrollY>20);btt.classList.toggle('sh',scrollY>500);},{passive:true});
+btt.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const ham=document.getElementById('ham'),drawer=document.getElementById('drawer');
+ham.addEventListener('click',()=>{const o=drawer.classList.toggle('o');ham.classList.toggle('o',o);ham.setAttribute('aria-expanded',o);drawer.setAttribute('aria-hidden',!o);});
+drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{drawer.classList.remove('o');ham.classList.remove('o');ham.setAttribute('aria-expanded','false');}));
+const fo=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');fo.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.fi').forEach(el=>fo.observe(el));
+document.querySelectorAll('.faq-btn').forEach(btn=>btn.addEventListener('click',()=>{const ans=btn.nextElementSibling,was=btn.classList.contains('o');document.querySelectorAll('.faq-btn.o').forEach(b=>{b.classList.remove('o');b.setAttribute('aria-expanded','false');b.nextElementSibling.classList.remove('o');});if(!was){btn.classList.add('o');btn.setAttribute('aria-expanded','true');ans.classList.add('o');}}));
+</script>
+<script>
+function runCount(el){const pre=el.dataset.pre||'',suf=el.dataset.suf||'',from=+(el.dataset.from||0),to=+(el.dataset.to||0),dur=1600,t0=performance.now(),ease=t=>1-Math.pow(1-t,3);(function tick(now){const p=Math.min((now-t0)/dur,1);el.textContent=pre+Math.round(from+(to-from)*ease(p)).toLocaleString()+suf;if(p<1)requestAnimationFrame(tick);})(t0);}
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){runCount(e.target);co.unobserve(e.target);}}),{threshold:.5});
+document.querySelectorAll('[data-to]').forEach(el=>co.observe(el));
+</script>
+</body>
+</html>
