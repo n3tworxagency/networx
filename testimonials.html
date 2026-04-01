@@ -101,8 +101,21 @@
   color:var(--emerald);
 }
 .stat-l{font-size:14px;color:var(--muted);margin-bottom:14px;line-height:1.4;}
-.stat-tag{display:flex;justify-content:center;}
-.stat-client-logo{height:22px;width:auto;object-fit:contain;opacity:.65;filter:brightness(0) invert(1);}
+.stat-tag{
+  display:flex;justify-content:center;align-items:center;
+  padding:8px 20px;
+  min-width:160px;height:48px;
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:4px;
+}
+.stat-client-logo{
+  height:28px;max-height:28px;
+  width:auto;max-width:160px;
+  object-fit:contain;
+  opacity:.75;
+  filter:brightness(0) invert(1);
+}
 @media(max-width:640px){
   .stats-wrap{grid-template-columns:1fr;}
   .stat{border-right:none;border-bottom:1px solid var(--border);padding:28px 20px;}
