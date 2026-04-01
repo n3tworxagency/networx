@@ -91,7 +91,10 @@ body::after {
 }
 
 img  { display: block; max-width: 100%; }
-.logotype img { max-width: none; }
+.logotype img {
+  height: 40px;
+  width: auto;
+}
 a    { color: inherit; text-decoration: none; }
 button { cursor: pointer; border: none; background: none; font: inherit; }
 ul   { list-style: none; }
@@ -1160,10 +1163,8 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 .foot-brand .logotype img {
-  height: 52px !important;
-  width: auto !important;
-  max-width: none !important;
-  max-height: none !important;
+  height: 56px;
+  width: auto;
 }
 
 .foot-tag {
