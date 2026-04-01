@@ -92,7 +92,7 @@ body::after {
 
 img  { display: block; max-width: 100%; }
 .logotype img {
-  height: 52px !important;
+  height: 72px !important;
   width: auto !important;
   max-height: none !important;
 }
@@ -1164,7 +1164,7 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 .foot-brand .logotype img {
-  height: 52px !important;
+  height: 72px !important;
   width: auto !important;
   max-height: none !important;
 }
