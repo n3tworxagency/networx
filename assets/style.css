@@ -1152,6 +1152,7 @@ h1, h2, h3, h4 {
 .foot-brand {
   margin-bottom: 36px;
   padding: 0;
+  margin-left: -18px;
 }
 .foot-brand .logotype {
   display: inline-flex;
