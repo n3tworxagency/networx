@@ -1584,7 +1584,6 @@ h1, h2, h3, h4 {
 
 /* Category 01 — Marketing & Engagement: Emerald mesh */
 .svc-img-marketing {
-  background-image: none !important;
   background:
     radial-gradient(ellipse 80% 60% at 20% 70%, rgba(80,197,137,0.18), transparent 65%),
     radial-gradient(ellipse 50% 40% at 80% 20%, rgba(80,197,137,0.10), transparent 60%),
@@ -1606,7 +1605,6 @@ h1, h2, h3, h4 {
 
 /* Category 02 — Tools & Platforms: Copper/warm mesh */
 .svc-img-tools {
-  background-image: none !important;
   background:
     radial-gradient(ellipse 80% 60% at 80% 70%, rgba(177,138,113,0.22), transparent 65%),
     radial-gradient(ellipse 50% 40% at 20% 20%, rgba(177,138,113,0.12), transparent 60%),
@@ -1628,7 +1626,6 @@ h1, h2, h3, h4 {
 
 /* Category 03 — Strategy & Insights: Forest teal mesh */
 .svc-img-dark {
-  background-image: none !important;
   background:
     radial-gradient(ellipse 80% 60% at 50% 80%, rgba(0,84,35,0.40), transparent 65%),
     radial-gradient(ellipse 50% 40% at 70% 15%, rgba(9,48,48,0.30), transparent 60%),
