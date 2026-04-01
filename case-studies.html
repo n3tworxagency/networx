@@ -265,7 +265,37 @@
 /* ============================================================
    PROCESS
    ============================================================ */
-#process{background:var(--bg0);}
+#process{background:var(--bg2);}
+.proc-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:var(--border);
+  border:1px solid var(--border);
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  margin-top:0;
+}
+.proc-card{
+  background:var(--bg3);
+  padding:32px 28px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.proc-card-num{
+  font-size:13px;font-weight:800;letter-spacing:.08em;
+  color:var(--subtle);
+}
+.p-active .proc-card-num,.proc-card.p-active .proc-card-num{color:var(--emerald);}
+.proc-card h4{font-size:16px;font-weight:700;color:#fff;line-height:1.3;margin:0;}
+.proc-card p{font-size:14px;color:var(--muted);line-height:1.6;margin:0;}
+@media(max-width:900px){
+  .proc-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:500px){
+  .proc-grid{grid-template-columns:1fr;}
+}
 #process h2{font-size:clamp(26px,4vw,46px);font-weight:800;margin-bottom:48px;}
 .proc-list{display:flex;flex-direction:column;gap:0;}
 .p-body h4{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px;}
@@ -699,15 +729,6 @@
             <div><strong>Ajak Biar</strong><span>CCO, Blueberry Markets</span></div>
           </div>
         </div>
-        <div style="margin-top:32px;padding:32px;background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-lg);">
-          <div class="eyebrow" style="margin-bottom:16px;">Our Process</div>
-          <div class="proc-list" style="border-top:1px solid var(--border);">
-            <div class="proc-step p-active"><div class="p-num">01</div><div class="p-body"><h4>Technical Onboarding</h4><p>Attribution audit + server-side setup</p></div></div>
-            <div class="proc-step"><div class="p-num">02</div><div class="p-body"><h4>Design &amp; Launch</h4><p>First live campaigns within 10 business days</p></div></div>
-            <div class="proc-step"><div class="p-num">03</div><div class="p-body"><h4>Benchmark &amp; Optimise</h4><p>CPL and CPA baselines established, iterated</p></div></div>
-            <div class="proc-step"><div class="p-num">04</div><div class="p-body"><h4>Scale</h4><p>Budget reallocation, GEO expansion, diversification</p></div></div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -715,6 +736,43 @@
 </section>
 
 
+<section id="process" aria-label="Our process" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="wrap">
+    <div class="sec-hd fi">
+      <div class="eyebrow">Our Process</div>
+      <h2>How We Work</h2>
+      <p>Every engagement follows the same proven four-step system. No guesswork, no learning curve.</p>
+    </div>
+    <div class="proc-grid fi">
+      <div class="proc-card p-active">
+        <div class="proc-card-num">01</div>
+        <h4>Technical Onboarding</h4>
+        <p>Attribution audit and server-side setup. We map exactly where spend is leaking before anything goes live.</p>
+      </div>
+      <div class="proc-card">
+        <div class="proc-card-num">02</div>
+        <h4>Design &amp; Launch</h4>
+        <p>Creative production, audience architecture, and campaign build. First live assets within 10 business days.</p>
+      </div>
+      <div class="proc-card">
+        <div class="proc-card-num">03</div>
+        <h4>Benchmark &amp; Optimise</h4>
+        <p>CPL and CPA baselines established. Iterative testing across creative, audience, and landing page variables.</p>
+      </div>
+      <div class="proc-card">
+        <div class="proc-card-num">04</div>
+        <h4>Scale</h4>
+        <p>Budget reallocation toward top performers, GEO expansion, and channel diversification.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w" class="btn-p" target="_blank" rel="noopener">
+        Book a Growth Session
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6.5 2.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
 </main>
 <section id="cta-final" aria-label="Book a growth session">
   <div class="wrap">
