@@ -464,8 +464,17 @@
 .cs-block:last-child{border-bottom:none;}
 .cs-block.flip{direction:rtl;}
 .cs-block.flip>*{direction:ltr;}
-.cs-logo{max-height:36px;width:auto;margin-bottom:24px;object-fit:contain;display:block;
-  filter:brightness(0) invert(1);margin-bottom:28px;}
+.cs-logo{
+  height:32px;
+  max-height:32px;
+  width:auto;
+  max-width:200px;
+  object-fit:contain;
+  margin-bottom:24px;
+  display:block;
+  filter:brightness(0) invert(1);
+  opacity:.85;
+}
 .cs-block h2{font-size:clamp(26px,3.5vw,42px);font-weight:800;
   line-height:1.15;margin-bottom:16px;}
 .cs-block p{font-size:16px;color:var(--muted);line-height:1.7;margin-bottom:24px;}
