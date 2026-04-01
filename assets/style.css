@@ -1152,7 +1152,6 @@ h1, h2, h3, h4 {
 .foot-brand {
   margin-bottom: 36px;
   padding: 0;
-  margin-left: -18px;
 }
 .foot-brand .logotype {
   display: inline-flex;
@@ -1172,10 +1171,11 @@ h1, h2, h3, h4 {
   color: var(--text-muted);
   line-height: 1.7;
   margin: 12px 0 8px;
+  margin-left: 18px;
   max-width: 300px;
 }
 
-.foot-loc { font-size: 12px; color: var(--text-dim); letter-spacing: 0.04em; }
+.foot-loc { font-size: 12px; color: var(--text-dim); letter-spacing: 0.04em; margin-left: 18px; }
 
 .foot-grid {
   display: grid;
