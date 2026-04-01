@@ -32,6 +32,28 @@
   background:radial-gradient(ellipse 60% 60% at 70% 50%,rgba(80,197,137,.07) 0%,transparent 70%);
   pointer-events:none;
 }
+.hero-photo{
+  position:absolute;
+  top:0;right:0;
+  width:52%;height:100%;
+  z-index:0;
+  pointer-events:none;
+}
+.hero-photo img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center;
+  opacity:.45;
+  filter:brightness(.7) saturate(.85);
+  display:block;
+}
+.hero-photo::after{
+  content:'';
+  position:absolute;inset:0;
+  background:linear-gradient(to right,var(--bg1) 0%,transparent 40%),
+             linear-gradient(to top,var(--bg1) 0%,transparent 25%);
+}
+.wrap{position:relative;z-index:1;}
 .hero-inner-wrap{max-width:760px;}
 .hero-inner-wrap .eyebrow{margin-bottom:18px;}
 .page-h1{
@@ -562,6 +584,9 @@
 
 <!-- HERO -->
 <section id="hero-inner" aria-label="Testimonials hero">
+  <div class="hero-photo" aria-hidden="true">
+    <img src="assets/testimonials-hero.webp" alt="" />
+  </div>
   <div class="wrap">
     <div class="hero-inner-wrap fi">
       <div class="eyebrow">Client Feedback</div>
