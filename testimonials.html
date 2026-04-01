@@ -372,15 +372,24 @@
    FINAL CTA
    ============================================================ */
 #cta-final{
-  background:var(--bg3);
-  border-top:1px solid var(--border);
+  background:var(--bg0);
+  text-align:center;
+  overflow:hidden;
+  position:relative;
 }
-.ctaf{
-  max-width:600px;margin:0 auto;text-align:center;
+#cta-final::before{
+  content:'';
+  position:absolute;
+  top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  width:500px;height:320px;
+  background:radial-gradient(ellipse,rgba(80,197,137,.10),transparent 70%);
+  pointer-events:none;
 }
-.ctaf h2{font-size:clamp(28px,4vw,50px);font-weight:800;margin-bottom:14px;}
-.ctaf .sub{font-size:18px;color:var(--muted);margin-bottom:16px;font-weight:600;}
-.ctaf .body{font-size:15px;color:var(--subtle);line-height:1.7;margin-bottom:36px;}
+.ctaf{position:relative;z-index:1;text-align:center;}
+.ctaf h2{font-size:clamp(30px,5.5vw,68px);font-weight:800;margin-bottom:12px;}
+.ctaf .sub{font-size:17px;font-weight:600;color:var(--copper);margin-bottom:8px;}
+.ctaf .body{font-size:15px;color:var(--muted);max-width:480px;margin:0 auto 32px;line-height:1.75;}
 
 /* ============================================================
    PAGE-SPECIFIC: TESTIMONIALS

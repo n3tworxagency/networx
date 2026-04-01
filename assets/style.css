@@ -1150,6 +1150,12 @@ h1, h2, h3, h4 {
 }
 
 .foot-brand { margin-bottom: 36px; }
+.foot-brand .logotype img {
+  height: 52px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+}
 
 .foot-tag {
   font-size: 14px;
@@ -1487,20 +1493,20 @@ h1, h2, h3, h4 {
 
 /* ---- Stats bar — client logo pill ---- */
 .stat-tag {
-  padding: 6px 12px;
+  padding: 8px 16px;
   background: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: 3px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 100px;
-  height: 36px;
+  min-width: 120px;
+  height: 44px;
 }
 
 .stat-client-logo {
-  max-height: 16px;
-  max-width: 96px;
+  max-height: 26px;
+  max-width: 120px;
   width: auto;
   object-fit: contain;
   /* All client logos are white-on-black PNGs — filter white onto dark surface */
