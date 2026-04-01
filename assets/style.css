@@ -92,8 +92,9 @@ body::after {
 
 img  { display: block; max-width: 100%; }
 .logotype img {
-  height: 40px;
+  height: 36px;
   width: auto;
+  display: block;
 }
 a    { color: inherit; text-decoration: none; }
 button { cursor: pointer; border: none; background: none; font: inherit; }
@@ -1163,8 +1164,9 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 .foot-brand .logotype img {
-  height: 56px;
+  height: 48px;
   width: auto;
+  display: block;
 }
 
 .foot-tag {
