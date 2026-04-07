@@ -1693,3 +1693,17 @@ h1, h2, h3, h4 {
 
 .lg-pill:hover img,
 .lg-pill:hover svg { opacity: 0.90; }
+
+/* ================================================================
+   MOBILE DRAWER — force link color override
+   ================================================================ */
+#nav .drawer a,
+#nav .drawer a:link,
+#nav .drawer a:visited,
+#nav .drawer a:hover {
+  color: #F2F2F0 !important;
+}
+
+#nav .drawer a:hover {
+  color: #50C589 !important;
+}
