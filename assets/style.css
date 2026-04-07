@@ -1707,3 +1707,11 @@ h1, h2, h3, h4 {
 #nav .drawer a:hover {
   color: #50C589 !important;
 }
+
+/* ================================================================
+   MOBILE DRAWER — force CTA button text color
+   ================================================================ */
+#nav .drawer .dcta,
+#nav .drawer .btn-p {
+  color: #0C1118 !important;
+}
