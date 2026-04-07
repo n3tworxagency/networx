@@ -330,12 +330,12 @@ h1, h2, h3, h4 {
   padding: 14px var(--pad-x);
   font-size: 15px;
   font-weight: 500;
-  color: var(--text) !important;
+  color: #F2F2F0 !important;
   border-bottom: 1px solid var(--border);
   transition: color var(--trans);
 }
 
-.drawer a:not(.btn-p):hover { color: var(--emerald) !important; }
+.drawer a:not(.btn-p):hover { color: #50C589 !important; }
 
 .drawer .dcta {
   margin: 14px var(--pad-x) 16px;
@@ -1694,24 +1694,4 @@ h1, h2, h3, h4 {
 .lg-pill:hover img,
 .lg-pill:hover svg { opacity: 0.90; }
 
-/* ================================================================
-   MOBILE DRAWER — force link color override
-   ================================================================ */
-#nav .drawer a:not(.btn-p),
-#nav .drawer a:not(.btn-p):link,
-#nav .drawer a:not(.btn-p):visited,
-#nav .drawer a:not(.btn-p):hover {
-  color: #F2F2F0 !important;
-}
-
-#nav .drawer a:hover {
-  color: #50C589 !important;
-}
-
-/* ================================================================
-   MOBILE DRAWER — force CTA button text color
-   ================================================================ */
-#nav .drawer .dcta,
-#nav .drawer .btn-p {
-  color: #0C1118 !important;
-}
+.drawer .btn-p { color: #0C1118 !important; }
