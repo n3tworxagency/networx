@@ -326,7 +326,7 @@ h1, h2, h3, h4 {
 
 .drawer.o { display: flex; }
 
-.drawer a {
+.drawer a:not(.btn-p) {
   padding: 14px var(--pad-x);
   font-size: 15px;
   font-weight: 500;
@@ -335,7 +335,7 @@ h1, h2, h3, h4 {
   transition: color var(--trans);
 }
 
-.drawer a:hover { color: var(--emerald) !important; }
+.drawer a:not(.btn-p):hover { color: var(--emerald) !important; }
 
 .drawer .dcta {
   margin: 14px var(--pad-x) 16px;
@@ -1697,10 +1697,10 @@ h1, h2, h3, h4 {
 /* ================================================================
    MOBILE DRAWER — force link color override
    ================================================================ */
-#nav .drawer a,
-#nav .drawer a:link,
-#nav .drawer a:visited,
-#nav .drawer a:hover {
+#nav .drawer a:not(.btn-p),
+#nav .drawer a:not(.btn-p):link,
+#nav .drawer a:not(.btn-p):visited,
+#nav .drawer a:not(.btn-p):hover {
   color: #F2F2F0 !important;
 }
 
