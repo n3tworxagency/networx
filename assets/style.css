@@ -330,12 +330,12 @@ h1, h2, h3, h4 {
   padding: 14px var(--pad-x);
   font-size: 15px;
   font-weight: 500;
-  color: #0E131A;
+  color: #0E131A !important;
   border-bottom: 1px solid var(--border);
   transition: color var(--trans);
 }
 
-.drawer a:hover { color: var(--text); }
+.drawer a:hover { color: #0E131A !important; }
 
 .drawer .dcta {
   margin: 14px var(--pad-x) 16px;
