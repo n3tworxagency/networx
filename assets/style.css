@@ -320,7 +320,7 @@ h1, h2, h3, h4 {
 .drawer {
   display: none;
   flex-direction: column;
-  background: var(--surface);
+  background: #0E131A;
   border-bottom: 1px solid var(--border);
 }
 
@@ -330,7 +330,7 @@ h1, h2, h3, h4 {
   padding: 14px var(--pad-x);
   font-size: 15px;
   font-weight: 500;
-  color: var(--text-muted);
+  color: #ffffff;
   border-bottom: 1px solid var(--border);
   transition: color var(--trans);
 }
