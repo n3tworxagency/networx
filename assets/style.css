@@ -557,6 +557,8 @@ h1, h2, h3, h4 {
   position: relative;
   overflow: hidden;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .tc-card::before {
@@ -576,6 +578,7 @@ h1, h2, h3, h4 {
   color: var(--text-muted);
   margin-bottom: 22px;
   position: relative;
+  flex: 1;
 }
 
 .tc-author {
