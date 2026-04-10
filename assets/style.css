@@ -271,7 +271,7 @@ h1, h2, h3, h4 {
 }
 
 .nav-links-d a {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--text-muted);
   transition: color var(--trans);
@@ -1410,6 +1410,11 @@ h1, h2, h3, h4 {
 
   /* BTT — no need for extra bottom offset */
   #btt { bottom: 28px; }
+
+  /* Larger nav logo on desktop */
+  .nav-row .logotype img {
+    height: 96px !important;
+  }
 }
 
 /* ================================================================
