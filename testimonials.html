@@ -596,8 +596,7 @@
       <a href="index.html#services">Services</a>
       <a href="testimonials.html" class="active">Testimonials</a>
     </nav>
-    <a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w"
-       class="btn-p nav-cta-d" target="_blank" rel="noopener">Contact</a>
+    <a href="#" class="btn-p nav-cta-d" data-contact-modal>Contact</a>
     <button class="ham" id="ham" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -606,8 +605,7 @@
     <a href="index.html">Why N3tworx</a>
     <a href="index.html#services">Services</a>
     <a href="testimonials.html">Testimonials</a>
-    <a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w"
-       class="btn-p dcta" target="_blank" rel="noopener"><span style="color:#0C1118!important;display:contents;">Book a Growth Session</span></a>
+    <a href="#" class="btn-p dcta" data-contact-modal><span style="color:#0C1118!important;display:contents;">Book a Growth Session</span></a>
   </div>
 </header>
 <main>
@@ -622,8 +620,7 @@
       <div class="eyebrow">Client Feedback</div>
       <h1 class="page-h1">Success Stories<br />from Our <span class="g">Implementation</span></h1>
       <p class="page-sub">Real testimonials from CFD brokers and prop trading firms who've built acquisition systems, grown deposits, and scaled with N3TWORX.</p>
-      <a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w"
-         class="btn-p" target="_blank" rel="noopener">
+      <a href="#" class="btn-p" data-contact-modal>
         Book a Growth Session
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6.5 2.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
@@ -812,7 +809,7 @@
       <h2>Experience the Difference</h2>
       <p class="sub">Ready to build a trader acquisition system?</p>
       <p class="body">Book a 30-minute session. We'll review your current acquisition setup, identify where the spend is leaking, and walk through what a full-funnel approach looks like for your GEOs and product.</p>
-      <a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w" class="btn-p" target="_blank" rel="noopener">
+      <a href="#" class="btn-p" data-contact-modal>
         Book Growth Session
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6.5 2.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
@@ -832,7 +829,7 @@
       <div class="foot-col"><h4>Quick Links</h4><ul>
         <li><a href="index.html#services">Services</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w" target="_blank" rel="noopener">Contact</a></li>
+        <li><a href="#" data-contact-modal>Contact</a></li>
       </ul></div>
       <div class="foot-col"><h4>Services</h4><ul>
         <li><a href="index.html#services">CFD Marketing</a></li>
@@ -846,7 +843,7 @@
         <li><a href="testimonials.html">Testimonials</a></li>
       </ul></div>
       <div class="foot-col"><h4>Support</h4><ul>
-        <li><a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w" target="_blank" rel="noopener">Contact Us</a></li>
+        <li><a href="#" data-contact-modal>Contact Us</a></li>
         <li><a href="index.html#faq">FAQs</a></li>
       </ul></div>
     </div>
@@ -861,7 +858,7 @@
   </div>
 </footer>
 <div class="stk">
-  <a href="https://links.n3tworx.io/widget/bookings/n3tworx-introlinkedi0f70w" target="_blank" rel="noopener">Book a Call</a>
+  <a href="#" data-contact-modal>Book a Call</a>
 </div>
 <button id="btt" aria-label="Back to top">
   <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 9.5V2.5M2.5 6L6 2.5 9.5 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -881,6 +878,28 @@ document.querySelectorAll('.faq-btn').forEach(btn=>btn.addEventListener('click',
 function runCount(el){const pre=el.dataset.pre||'',suf=el.dataset.suf||'',from=+(el.dataset.from||0),to=+(el.dataset.to||0),dur=1600,t0=performance.now(),ease=t=>1-Math.pow(1-t,3);(function tick(now){const p=Math.min((now-t0)/dur,1);el.textContent=pre+Math.round(from+(to-from)*ease(p)).toLocaleString()+suf;if(p<1)requestAnimationFrame(tick);})(t0);}
 const co=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){runCount(e.target);co.unobserve(e.target);}}),{threshold:.5});
 document.querySelectorAll('[data-to]').forEach(el=>co.observe(el));
+</script>
+
+<!-- CONTACT MODAL -->
+<div id="contact-modal" role="dialog" aria-modal="true" aria-label="Contact N3TWORX" style="display:none;position:fixed;inset:0;z-index:9999;align-items:center;justify-content:center;">
+  <div id="contact-backdrop" style="position:absolute;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(4px);"></div>
+  <div style="position:relative;width:min(680px,94vw);max-height:90vh;background:#141C25;border:1px solid rgba(80,197,137,.18);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;">
+    <button id="contact-close" aria-label="Close" style="position:absolute;top:14px;right:16px;background:none;border:none;cursor:pointer;color:#8899aa;font-size:20px;line-height:1;z-index:1;">&#x2715;</button>
+    <iframe src="https://links.n3tworx.io/widget/form/weLvvNGgnZuVkZBgmZsx" title="Contact N3TWORX" style="width:100%;height:600px;border:none;display:block;" loading="lazy" allowfullscreen></iframe>
+  </div>
+</div>
+<script>
+(function(){
+  var modal=document.getElementById('contact-modal');
+  var backdrop=document.getElementById('contact-backdrop');
+  var closeBtn=document.getElementById('contact-close');
+  function openModal(e){e.preventDefault();modal.style.display='flex';document.body.style.overflow='hidden';}
+  function closeModal(){modal.style.display='none';document.body.style.overflow='';}
+  document.querySelectorAll('a[data-contact-modal]').forEach(function(a){a.addEventListener('click',openModal);});
+  backdrop.addEventListener('click',closeModal);
+  closeBtn.addEventListener('click',closeModal);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
+})();
 </script>
 </body>
 </html>
