@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>N3TWORX | The Growth Agency for CFD Brokers and Prop Firms</title>
-  <meta name="description" content="N3TWORX helps CFD brokers and prop trading firms acquire high-value traders in restricted markets. Proven results across 10+ global markets." />
-  <meta property="og:title" content="N3TWORX | The Growth Agency for CFD Brokers and Prop Firms" />
-  <meta property="og:description" content="N3TWORX helps CFD brokers and prop trading firms acquire high-value traders in restricted markets." />
+  <title>N3TWORX | The Growth Agency for B2B Service Businesses</title>
+  <meta name="description" content="N3TWORX helps B2B service businesses scale revenue with our proven AI Growth Engine. Work with the team behind $400M+ in client revenue growth." />
+  <meta property="og:title" content="N3TWORX | The Growth Agency for B2B Service Businesses" />
+  <meta property="og:description" content="N3TWORX helps B2B service businesses scale revenue with our proven AI Growth Engine. $400M+ in client revenue growth." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/SecondaryLogo-o6o0X.png" />
   <link rel="icon" type="image/png" href="assets/Icon Logo dark.png" />
@@ -14,6 +14,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css?v=2" />
+  <style>
+/* What We Do */
+#what-we-do{background:var(--bg2);border-top:1px solid var(--border);}
+.wtd-inner{text-align:center;max-width:840px;margin:0 auto;}
+.wtd-inner h2{font-size:clamp(28px,4.5vw,54px);font-weight:800;margin-bottom:20px;line-height:1.15;text-wrap:balance;}
+.wtd-body{font-size:clamp(16px,1.8vw,20px);color:var(--muted);line-height:1.75;max-width:720px;margin:0 auto 32px;text-wrap:balance;}
+.wtd-body strong{color:#fff;}
+.wtd-pills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.wtd-pill{padding:10px 22px;border-radius:100px;font-size:14px;font-weight:700;border:1.5px solid var(--border-e);color:var(--emerald);background:rgba(80,197,137,.08);}
+/* Process Grid */
+.proc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;}
+.proc-grid .proc-step{padding:32px 24px;border-bottom:none!important;border-right:1px solid var(--border);flex-direction:column;align-items:flex-start;gap:18px;}
+.proc-grid .p-body h4{font-size:14px;font-weight:700;line-height:1.35;margin-bottom:12px;text-wrap:balance;}
+.proc-grid .proc-step:last-child{border-right:none;}
+.proc-grid .p-num{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--border);background:var(--bg3);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--subtle);min-width:unset;padding-top:0;transition:border-color .2s,color .2s;}
+.proc-grid .p-active .p-num,.proc-grid .proc-step:hover .p-num{border-color:var(--emerald);color:var(--emerald);}
+.proc-bullets{list-style:none;padding:0;margin:0 0 8px;}
+.proc-bullets li{font-size:13px;color:var(--muted);line-height:1.55;padding:3px 0 3px 16px;position:relative;}
+.proc-bullets li::before{content:'';position:absolute;left:0;top:10px;width:5px;height:5px;border-radius:50%;background:var(--emerald);}
+@media(max-width:1100px){.proc-grid{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:900px){.proc-grid{grid-template-columns:1fr;}.proc-grid .proc-step{border-right:none!important;border-bottom:1px solid var(--border)!important;}.proc-grid .proc-step:last-child{border-bottom:none!important;}}
+  </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 </head>
@@ -26,14 +48,14 @@
   <div class="nav-row">
 
     <a href="index.html" class="logotype" aria-label="N3TWORX home" style="display:inline-flex;align-items:center;flex-shrink:0;">
-      <img src="assets/SecondaryLogo-o6o0X.png"
-           alt="N3TWORX — Advancing Finance Firms"
-           style="height:72px;width:auto;display:block;" />
+      <img src="assets/N3tworx%20logo_transparent.png"
+           alt="N3TWORX"
+           style="height:56px;width:auto;display:block;" />
     </a>
 
    <nav class="nav-links-d" aria-label="Primary navigation">
   <a href="#about">Why N3tworx</a>
-  <a href="#services">Services</a>
+  <a href="#what-we-do">What We Do</a>
   <a href="testimonials.html">Testimonials</a>
   </nav>
 
@@ -46,7 +68,7 @@
 
   <div class="drawer" id="drawer" aria-hidden="true" role="navigation" aria-label="Mobile navigation">
     <a href="index.html">Why N3tworx</a>
-    <a href="index.html#services">Services</a>
+    <a href="#what-we-do">What We Do</a>
     <a href="testimonials.html">Testimonials</a>
     <a href="#" class="btn-p dcta" data-contact-modal><span style="color:#0C1118!important;display:contents;">Book a Growth Session</span></a>
   </div>
@@ -60,15 +82,14 @@
 <section id="hero" aria-label="Hero">
   <div class="wrap">
     <div class="hero-inner">
-      <div class="eyebrow">CFD &amp; Prop Trading Growth Agency</div>
+      <div class="eyebrow">B2B Service Growth Agency</div>
       <h1 class="hero-h1">
-        The Growth Agency<br />
-        for <span class="g">CFD Brokers</span><br />
-        and <span class="c">Prop Firms.</span>
+        We Scale<br />
+        <span class="g">B2B Service</span><br />
+        <span class="c">Businesses.</span>
       </h1>
       <p class="hero-sub">
-        We help CFD brokers and prop firms acquire high-value traders in markets
-        your current team or agency can't touch.
+        Work with the team responsible for $400M+ in revenue growth generated for service companies.
       </p>
       <div class="hero-btns">
         <a href="#" class="btn-p" data-contact-modal>
@@ -101,7 +122,7 @@
 
       <div class="stat fi" style="transition-delay:.1s">
         <div class="stat-n" data-from="500" data-to="1500" data-suf="+">500</div>
-        <p class="stat-l">Monthly Active Traders in 10 months</p>
+        <p class="stat-l">Monthly Active Accounts in 10 months</p>
         <span class="stat-tag">
           <img src="assets/BLUEBERRYMARKETS-DLYk_.png" alt="Blueberry Markets" class="stat-client-logo" style="height:48px;max-width:220px;object-fit:contain;opacity:.85;filter:brightness(0) invert(1);" />
         </span>
@@ -207,9 +228,9 @@
 <section id="logos" aria-label="Client logos">
   <div class="wrap">
     <div class="fi">
-      <div class="eyebrow">Finance Market Leaders</div>
-      <h2 style="font-size:clamp(22px,3.5vw,40px);">Trusted by Finance Firms Across 10+ Markets</h2>
-      <p class="logos-sub">We work exclusively with CFD brokers and prop trading firms. No generalist clients, no learning curve, no time wasted explaining how the industry works.</p>
+      <div class="eyebrow">Our Clients</div>
+      <h2 style="font-size:clamp(22px,3.5vw,40px);">Trusted by Service Businesses Across 10+ Markets</h2>
+      <p class="logos-sub">We work with ambitious B2B service companies looking to scale. No generic playbooks, no learning curve, no time wasted.</p>
     </div>
   </div>
 
@@ -275,105 +296,20 @@
 </div>
 
 <!-- ============================================================
-     SERVICES
+     WHAT WE DO
      ============================================================ -->
-<section id="services" aria-label="Services">
+<section id="what-we-do" aria-label="What we do">
   <div class="wrap">
-
-    <div class="svc-head fi">
+    <div class="wtd-inner fi">
       <div class="eyebrow">What We Do</div>
-      <h2>Our Services</h2>
-    </div>
-    <p class="svc-intro fi">We specialize in delivering innovative growth and community engagement strategies that enable top CFD and Prop firms worldwide to thrive in a competitive market.</p>
-
-    <!-- Category 1 -->
-    <div class="svc-cat fi">
-      <div class="svc-img svc-img-marketing" style="background-image:url('assets/marketing-engagement.webp');background-size:cover;background-position:center center;">
-        <div class="svc-img-overlay" aria-hidden="true"></div>
-        <span class="svc-cat-eye">Category 01</span>
-        <div class="svc-cat-h">Marketing &amp;<br />Engagement</div>
-      </div>
-      <div class="svc-cards">
-        <p class="svc-intro-txt">We operate where most agencies stop. Every service below is built specifically for financial services. Not adapted from an e-commerce playbook.</p>
-        <div class="svc-card">
-          <div class="svc-ch">
-            <div class="svc-ico"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 10.5L5.5 7l3 3 3.5-5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <h4>CFD Marketing</h4>
-          </div>
-          <p>Paid media across Meta, Google, and programmatic networks. Full funnel: creative production, audience strategy, daily optimisation, weekly reporting.</p>
-        </div>
-        <div class="svc-card">
-          <div class="svc-ch">
-            <div class="svc-ico"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.4"/><path d="M7 4.5v2.5l1.5 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
-            <h4>Prop Firm Marketing</h4>
-          </div>
-          <p>Trader acquisition systems. KOL and influencer campaigns across YouTube, Telegram, and X. Drives challenge purchases and funded account conversions.</p>
-        </div>
-        <div class="svc-cta">
-          <a href="#" class="btn-o" data-contact-modal>Partner With Us Today</a>
-        </div>
+      <h2>Built to Scale B2B Service Businesses</h2>
+      <p class="wtd-body">We help CEOs scale their companies by repositioning their offer using our <strong>AI Growth Engine</strong>, increasing sales conversion and removing delivery bottlenecks.</p>
+      <div class="wtd-pills">
+        <span class="wtd-pill">Offer Repositioning</span>
+        <span class="wtd-pill">Sales Conversion</span>
+        <span class="wtd-pill">Remove Delivery Bottlenecks</span>
       </div>
     </div>
-
-    <!-- Category 2 — flipped -->
-    <div class="svc-cat flip fi">
-      <div class="svc-img svc-img-tools" style="background-image:url('assets/tools-platforms.webp');background-size:cover;background-position:center center;">
-        <div class="svc-img-overlay" aria-hidden="true"></div>
-        <span class="svc-cat-eye">Category 02</span>
-        <div class="svc-cat-h">Tools &amp;<br />Platforms</div>
-      </div>
-      <div class="svc-cards">
-        <p class="svc-intro-txt">Elevate your trading with our comprehensive suite of tools and platforms built to retain and grow active trader communities.</p>
-        <div class="svc-card">
-          <div class="svc-ch">
-            <div class="svc-ico"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="2" y="2" width="10" height="10" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M4 7h6M4 4.5h6M4 9.5h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
-            <h4>CFD Products</h4>
-          </div>
-          <p>Trading signals, room experience design, and community infrastructure that keeps depositing traders engaged beyond the first conversion.</p>
-        </div>
-        <div class="svc-card">
-          <div class="svc-ch">
-            <div class="svc-ico"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 4h10v7.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 2 11.5V4z" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 4V2.5a1.5 1.5 0 0 1 3 0V4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
-            <h4>Trading Room</h4>
-          </div>
-          <p>Real-time analytics, community support, and live trading sessions that drive sustained deposit activity and trader loyalty.</p>
-        </div>
-        <div class="svc-cta">
-          <a href="#" class="btn-o" data-contact-modal>Partner With Us Today</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Category 3 -->
-    <div class="svc-cat fi">
-      <div class="svc-img svc-img-dark" style="background-image:url('assets/strategy-insights.webp');background-size:cover;background-position:center center;">
-        <div class="svc-img-overlay" aria-hidden="true"></div>
-        <div class="svc-grid" aria-hidden="true"></div>
-        <span class="svc-cat-eye">Category 03</span>
-        <div class="svc-cat-h">Strategy &amp;<br />Insights</div>
-      </div>
-      <div class="svc-cards">
-        <p class="svc-intro-txt">Navigate the complexities of the CFD market with confidence. CMO and Head of Performance level operators, not account managers.</p>
-        <div class="svc-card">
-          <div class="svc-ch">
-            <div class="svc-ico"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11z" stroke="currentColor" stroke-width="1.4"/><path d="M7 5v3.5M5.5 7H8.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
-            <h4>CFD Consulting</h4>
-          </div>
-          <p>Acquisition architecture, channel selection, ICP analysis, and go-to-market planning from CMO and Head of Performance level operators.</p>
-        </div>
-        <div class="svc-card">
-          <div class="svc-ch">
-            <div class="svc-ico"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2.5 11.5V7M5 11.5V4.5M7.5 11.5V8.5M10 11.5V2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <h4>Server Side Analytics</h4>
-          </div>
-          <p>Attribution setup, conversion tracking, and funnel analytics built for financial services compliance. Know exactly where your traders come from.</p>
-        </div>
-        <div class="svc-cta">
-          <a href="#" class="btn-o" data-contact-modal>Partner With Us Today</a>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -383,10 +319,10 @@
 <section id="vals" aria-label="Value propositions">
   <div class="wrap">
     <div class="val-g">
-      <div class="val-item fi"><svg class="val-ico" viewBox="0 0 34 34" fill="none"><path d="M6.5 17c0-5.799 4.701-10.5 10.5-10.5S27.5 11.201 27.5 17 22.799 27.5 17 27.5 6.5 22.799 6.5 17z" stroke="currentColor" stroke-width="1.5"/><path d="M12.5 17h9M17 12.5v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><h3>Customized Solutions</h3><p>Tailored CFD tools and growth strategies for firms at every stage. No templates borrowed from unrelated verticals.</p></div>
-      <div class="val-item fi" style="transition-delay:.1s"><svg class="val-ico" viewBox="0 0 34 34" fill="none"><path d="M6.5 25L11 18l5 5 4-5.5 7.5 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="6.5" y="6.5" width="21" height="21" rx="2" stroke="currentColor" stroke-width="1.5"/></svg><h3>Data-Driven Strategies</h3><p>Every channel decision backed by attribution data, not intuition. Analytics for informed decisions in the CFD landscape.</p></div>
-      <div class="val-item fi" style="transition-delay:.2s"><svg class="val-ico" viewBox="0 0 34 34" fill="none"><path d="M17 6.5v2.5M22.77 9.23l-1.77 1.77M25.5 17H23M22.77 24.77l-1.77-1.77M17 27.5V25M11.23 24.77l1.77-1.77M8.5 17H11M11.23 9.23l1.77 1.77" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="17" cy="17" r="3.5" stroke="currentColor" stroke-width="1.5"/></svg><h3>Growth-Focused Marketing</h3><p>Campaigns built to maximize deposits and first-time deposits. Performance-only thinking from brief to weekly report.</p></div>
-      <div class="val-item fi" style="transition-delay:.3s"><svg class="val-ico" viewBox="0 0 34 34" fill="none"><rect x="6.5" y="12" width="21" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M12 12v-1.5a5 5 0 0 1 10 0V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="17" cy="19" r="2" stroke="currentColor" stroke-width="1.5"/></svg><h3>Trading Room Experience</h3><p>Live analytics, community support, and expert sessions. Keeps depositing traders engaged past the first conversion.</p></div>
+      <div class="val-item fi"><svg class="val-ico" viewBox="0 0 34 34" fill="none"><path d="M6.5 17c0-5.799 4.701-10.5 10.5-10.5S27.5 11.201 27.5 17 22.799 27.5 17 27.5 6.5 22.799 6.5 17z" stroke="currentColor" stroke-width="1.5"/><path d="M12.5 17h9M17 12.5v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><h3>Customized Solutions</h3><p>Tailored growth systems for B2B service businesses at every stage. No generic playbooks borrowed from unrelated industries.</p></div>
+      <div class="val-item fi" style="transition-delay:.1s"><svg class="val-ico" viewBox="0 0 34 34" fill="none"><path d="M6.5 25L11 18l5 5 4-5.5 7.5 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="6.5" y="6.5" width="21" height="21" rx="2" stroke="currentColor" stroke-width="1.5"/></svg><h3>Data-Driven Strategies</h3><p>Every channel decision backed by attribution data, not intuition. Clear analytics for confident, scalable growth.</p></div>
+      <div class="val-item fi" style="transition-delay:.2s"><svg class="val-ico" viewBox="0 0 34 34" fill="none"><path d="M17 6.5v2.5M22.77 9.23l-1.77 1.77M25.5 17H23M22.77 24.77l-1.77-1.77M17 27.5V25M11.23 24.77l1.77-1.77M8.5 17H11M11.23 9.23l1.77 1.77" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="17" cy="17" r="3.5" stroke="currentColor" stroke-width="1.5"/></svg><h3>Growth-Focused Marketing</h3><p>Campaigns built to maximize qualified leads and closed revenue. Performance-only thinking from brief to weekly report.</p></div>
+      <div class="val-item fi" style="transition-delay:.3s"><svg class="val-ico" viewBox="0 0 34 34" fill="none"><rect x="6.5" y="12" width="21" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M12 12v-1.5a5 5 0 0 1 10 0V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="17" cy="19" r="2" stroke="currentColor" stroke-width="1.5"/></svg><h3>AI Growth Engine</h3><p>End-to-end growth infrastructure powered by AI. From offer repositioning to sales enablement — fully done for you.</p></div>
     </div>
   </div>
 </section>
@@ -400,12 +336,68 @@
       <div class="eyebrow">Our Process</div>
       <h2 style="font-size:clamp(26px,4.5vw,50px);">How We Work</h2>
     </div>
-    <div class="proc-list">
-      <div class="proc-step p-active fi"><div class="p-num">01</div><div class="p-body"><h4>Technical Onboarding</h4><p>Full audit of existing tracking, attribution, and channel setup. We map what's working and what's leaking before spending a dollar.</p><span class="ms">Analytics Integrated</span></div></div>
-      <div class="proc-step fi" style="transition-delay:.07s"><div class="p-num">02</div><div class="p-body"><h4>Design and Launch</h4><p>Creative production, audience architecture, and campaign build across selected channels. First live assets within 10 business days.</p><span class="ms">First Ad Campaign Live</span></div></div>
-      <div class="proc-step fi" style="transition-delay:.14s"><div class="p-num">03</div><div class="p-body"><h4>Benchmarking Spend</h4><p>Establish cost-per-lead and cost-per-FTD baselines. Iterative testing across creative, audience, and landing page variables.</p><span class="ms">First Conversion Optimization</span></div></div>
-      <div class="proc-step fi" style="transition-delay:.21s"><div class="p-num">04</div><div class="p-body"><h4>Scaling and Optimizing</h4><p>Budget reallocation toward top performers. Lookalike expansion, new GEO entry, and channel diversification.</p><span class="ms">Reached Target CPA</span></div></div>
-      <div class="proc-step fi" style="transition-delay:.28s"><div class="p-num">05</div><div class="p-body"><h4>Impact Analysis</h4><p>Full-quarter review: attribution, ROAS, LTV analysis, and strategic planning for the next 90 days.</p><span class="ms">Strategic Plan for Next Quarter</span></div></div>
+    <div class="proc-list proc-grid">
+      <div class="proc-step fi">
+        <div class="p-num">01</div>
+        <div class="p-body">
+          <h4>White-Glove Onboarding</h4>
+          <ul class="proc-bullets">
+            <li>45min Onboarding Call + structured Notion workspace</li>
+            <li>CSM handholding through setup</li>
+          </ul>
+          <span class="ms">Onboarded in 48hrs</span>
+        </div>
+      </div>
+      <div class="proc-step fi" style="transition-delay:.07s">
+        <div class="p-num">02</div>
+        <div class="p-body">
+          <h4>Scalable Offer Development</h4>
+          <ul class="proc-bullets">
+            <li>90min Offer Workshop + structured Notion/Miro</li>
+            <li>Market Research &amp; Offer/ICP/Messaging Development</li>
+          </ul>
+          <span class="ms">Offer Validated</span>
+        </div>
+      </div>
+      <div class="proc-step fi" style="transition-delay:.14s">
+        <div class="p-num">03</div>
+        <div class="p-body">
+          <h4>Acquisition Funnel Development &amp; Optimization</h4>
+          <ul class="proc-bullets">
+            <li>Complete Copywriting &amp; Ads Creation</li>
+            <li>Landing Page &amp; Funnel Setup</li>
+            <li>60min Funnel Review Call + structured Notion/Miro</li>
+            <li>Continuous Optimization &amp; new ads</li>
+          </ul>
+          <span class="ms">First Leads Live</span>
+        </div>
+      </div>
+      <div class="proc-step fi" style="transition-delay:.21s">
+        <div class="p-num">04</div>
+        <div class="p-body">
+          <h4>Sales Enablement &amp; Collaboration</h4>
+          <ul class="proc-bullets">
+            <li>Tailored Discovery Framework Creation</li>
+            <li>Custom Proposal Template Creation</li>
+            <li>Access to our Sales Playbook</li>
+            <li>60-90min Sales-Marketing Alignment Workshop</li>
+            <li>Continuous Pipeline Review</li>
+          </ul>
+          <span class="ms">Pipeline Active</span>
+        </div>
+      </div>
+      <div class="proc-step fi" style="transition-delay:.28s">
+        <div class="p-num">05</div>
+        <div class="p-body">
+          <h4>Consultancy &amp; Coaching</h4>
+          <ul class="proc-bullets">
+            <li>Discovery/Sales call review (1-2/week unless crisis mode)</li>
+            <li>Weekly dedicated consult with CSM</li>
+            <li>Weekly reporting &amp; updates</li>
+          </ul>
+          <span class="ms">Weekly Growth Reviews</span>
+        </div>
+      </div>
     </div>
     <div class="proc-foot fi">
       <a href="#" class="btn-p" data-contact-modal>Elevate My Strategy</a>
@@ -413,28 +405,6 @@
   </div>
 </section>
 
-<!-- ============================================================
-     FAQ
-     ============================================================ -->
-<section id="faq" aria-label="FAQ">
-  <div class="wrap">
-    <div class="fi">
-      <div class="eyebrow">Questions</div>
-      <h2 style="font-size:clamp(26px,4vw,48px);">Frequently Asked Questions</h2>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item fi"><button class="faq-btn" aria-expanded="false">What makes N3TWORX different from a general digital marketing agency?<span class="faq-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-ans"><div class="faq-ans-inner">We work exclusively with CFD brokers and prop trading firms. Our team has operated inside these businesses at executive level — not as consultants, but as practitioners. A general agency learns on your budget. We don't.</div></div></div>
-      <div class="faq-item fi"><button class="faq-btn" aria-expanded="false">Do you work with firms outside of Australia?<span class="faq-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-ans"><div class="faq-ans-inner">Yes. We operate across APAC, MENA, and Europe. Our campaigns run in 10+ active markets and our team has experience managing media in 156 countries.</div></div></div>
-      <div class="faq-item fi"><button class="faq-btn" aria-expanded="false">What does the Growth Session involve?<span class="faq-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-ans"><div class="faq-ans-inner">A 30-minute working session. We review your current acquisition setup, identify where budget is leaking, and walk through what a full-funnel approach looks like for your specific GEOs and product type.</div></div></div>
-      <div class="faq-item fi"><button class="faq-btn" aria-expanded="false">How long before we see measurable results?<span class="faq-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-ans"><div class="faq-ans-inner">First campaigns are typically live within 10 business days of onboarding. Most clients see their first material shift in CPA within 60 to 90 days.</div></div></div>
-      <div class="faq-item fi"><button class="faq-btn" aria-expanded="false">Do you manage creative production or just media buying?<span class="faq-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-ans"><div class="faq-ans-inner">Both. Full-funnel means full-funnel. We handle creative strategy, production, copy, landing page architecture, media buying, daily optimisation, and weekly reporting.</div></div></div>
-      <div class="faq-item fi"><button class="faq-btn" aria-expanded="false">Can you operate in regulated advertising environments?<span class="faq-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-ans"><div class="faq-ans-inner">Yes. We've operated in gambling, crypto, and financial services — the three most restricted categories in digital advertising. Restricted environments are our primary operating context.</div></div></div>
-      <div class="faq-item fi"><button class="faq-btn" aria-expanded="false">What does server-side analytics actually mean for our business?<span class="faq-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-ans"><div class="faq-ans-inner">Server-side events give you cleaner attribution, better optimisation signals, and a defensible audit trail for compliance — not dependent on client-side pixels blocked by ad blockers or iOS restrictions.</div></div></div>
-      <div class="faq-item fi"><button class="faq-btn" aria-expanded="false">Do you offer month-to-month engagements?<span class="faq-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-ans"><div class="faq-ans-inner">Our engagements are structured around 90-day performance cycles. We discuss exit terms upfront with every client.</div></div></div>
-      <div class="faq-item fi"><button class="faq-btn" aria-expanded="false">What size firms do you work with?<span class="faq-ico"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5h6M5 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-ans"><div class="faq-ans-inner">Mid-size to enterprise CFD brokers and prop trading firms with an existing media budget and an established product.</div></div></div>
-    </div>
-  </div>
-</section>
 
 <!-- ============================================================
      FINAL CTA
@@ -444,8 +414,8 @@
     <div class="ctaf fi">
       <div class="eyebrow" style="justify-content:center;">Get Started</div>
       <h2>Experience the Difference</h2>
-      <p class="sub">Ready to build a trader acquisition system?</p>
-      <p class="body">Book a 30-minute session. We'll review your current acquisition setup, identify where the spend is leaking, and walk through what a full-funnel approach looks like for your GEOs and product.</p>
+      <p class="sub">Ready to scale your B2B service business?</p>
+      <p class="body">Book a 30-minute session. We'll review your current growth setup, identify where revenue is leaking, and walk through what a full-funnel approach looks like for your business.</p>
       <a href="#" class="btn-p" data-contact-modal>
         Book Growth Session
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M6.5 2.5l3.5 3.5-3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -464,17 +434,17 @@
 
     <div class="foot-brand">
       <a href="index.html" class="logotype" aria-label="N3TWORX home" style="padding:0;margin:0;">
-        <img src="assets/SecondaryLogo-o6o0X.png" alt="N3TWORX" style="height:72px;width:auto;display:block;" />
+        <img src="assets/N3tworx%20logo_transparent.png" alt="N3TWORX" style="height:56px;width:auto;display:block;" />
       </a>
-      <p class="foot-tag">We partner with finance firms and help them advance by +$100k/month revenue in 3 months with proven marketing strategies.</p>
+      <p class="foot-tag">We partner with B2B service companies and help them scale by +$100k/month in 3 months with our proven AI Growth Engine.</p>
       <p class="foot-loc">Sydney, NSW, Australia</p>
     </div>
 
     <div class="foot-grid">
-      <div class="foot-col"><h4>Quick Links</h4><ul><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#" data-contact-modal>Contact</a></li></ul></div>
-      <div class="foot-col"><h4>Services</h4><ul><li><a href="#services">CFD Marketing</a></li><li><a href="#services">Prop Marketing</a></li><li><a href="#services">CFD Products</a></li><li><a href="#services">Trading Rooms</a></li><li><a href="#services">CFD Consulting</a></li><li><a href="#services">Server Side Analytics</a></li></ul></div>
-      <div class="foot-col"><h4>Industries</h4><ul><li><a href="#">Finance &amp; Brokers</a></li><li><a href="#">Law Firms</a></li><li><a href="#">Accounting Firms</a></li><li><a href="#">Professional Services</a></li></ul></div>
-      <div class="foot-col"><h4>Support</h4><ul><li><a href="#" data-contact-modal>Contact Us</a></li><li><a href="#faq">FAQs</a></li></ul></div>
+      <div class="foot-col"><h4>Quick Links</h4><ul><li><a href="#what-we-do">What We Do</a></li><li><a href="#process">Our Process</a></li><li><a href="#" data-contact-modal>Contact</a></li></ul></div>
+      <div class="foot-col"><h4>Services</h4><ul><li><a href="#what-we-do">Offer Development</a></li><li><a href="#what-we-do">Acquisition Funnels</a></li><li><a href="#what-we-do">Sales Enablement</a></li><li><a href="#what-we-do">Growth Consulting</a></li><li><a href="#what-we-do">AI Growth Engine</a></li></ul></div>
+      <div class="foot-col"><h4>Industries</h4><ul><li><a href="#">Consulting Firms</a></li><li><a href="#">Law Firms</a></li><li><a href="#">Accounting Firms</a></li><li><a href="#">Professional Services</a></li></ul></div>
+      <div class="foot-col"><h4>Support</h4><ul><li><a href="#" data-contact-modal>Contact Us</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-of-service.html">Terms of Service</a></li></ul></div>
     </div>
 
     <div class="foot-bot">
