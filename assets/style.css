@@ -92,9 +92,9 @@ body::after {
 
 img  { display: block; max-width: 100%; }
 .logotype img {
-  height: 72px !important;
-  width: auto !important;
-  max-height: none !important;
+  height: 36px;
+  width: auto;
+  max-height: none;
 }
 a    { color: inherit; text-decoration: none; }
 button { cursor: pointer; border: none; background: none; font: inherit; }
@@ -1167,9 +1167,9 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 .foot-brand .logotype img {
-  height: 72px !important;
-  width: auto !important;
-  max-height: none !important;
+  height: 36px;
+  width: auto;
+  max-height: none;
 }
 
 .foot-tag {
@@ -1413,7 +1413,7 @@ h1, h2, h3, h4 {
 
   /* Larger nav logo on desktop */
   .nav-row .logotype img {
-    height: 96px !important;
+    height: 36px;
   }
 }
 
